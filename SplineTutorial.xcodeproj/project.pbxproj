@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		19FFA4F12DCCB1D4000CC454 /* SplineRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 19FFA4F02DCCB1D4000CC454 /* SplineRuntime */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		19F490072DC91E7D00C0C0FF /* SplineTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplineTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19FFA4F12DCCB1D4000CC454 /* SplineRuntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = SplineTutorial;
 			packageProductDependencies = (
+				19FFA4F02DCCB1D4000CC454 /* SplineRuntime */,
 			);
 			productName = SplineTutorial;
 			productReference = 19F490072DC91E7D00C0C0FF /* SplineTutorial.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 19F48FFE2DC91E7D00C0C0FF;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				19FFA4EF2DCCB1D4000CC454 /* XCRemoteSwiftPackageReference "spline-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 19F490082DC91E7D00C0C0FF /* Products */;
 			projectDirPath = "";
@@ -324,6 +333,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		19FFA4EF2DCCB1D4000CC454 /* XCRemoteSwiftPackageReference "spline-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/splinetool/spline-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		19FFA4F02DCCB1D4000CC454 /* SplineRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19FFA4EF2DCCB1D4000CC454 /* XCRemoteSwiftPackageReference "spline-ios" */;
+			productName = SplineRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 19F48FFF2DC91E7D00C0C0FF /* Project object */;
 }
